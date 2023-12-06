@@ -8,7 +8,9 @@ import { useInView } from "react-intersection-observer";
 import { useActiveSectionConext } from "@/context/active-section-context";
 
 const Projects = () => {
-  const { ref, inView } = useInView();
+  const { ref, inView } = useInView({
+    threshold: 0.5,
+  });
   const { setActiveSection } = useActiveSectionConext();
 
   useEffect(() => {
