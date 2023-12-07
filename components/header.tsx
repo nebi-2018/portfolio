@@ -7,7 +7,8 @@ import clsx from "clsx";
 import { useActiveSectionConext } from "@/context/active-section-context";
 
 const Header = () => {
-  const { activeSection, setActiveSection } = useActiveSectionConext();
+  const { activeSection, setActiveSection, setTimeOfLastClick } =
+    useActiveSectionConext();
   return (
     <header className="z-[999] relative">
       <motion.div
@@ -32,7 +33,10 @@ const Header = () => {
                   { "text-gray-950": activeSection === link.name }
                 )}
                 href={link.hash}
-                onClick={() => setActiveSection(link.name)}
+                onClick={() => {
+                  setActiveSection(link.name);
+                  setTimeOfLastClick(Date.now());
+                }}
               >
                 {link.name}
                 {link.name === activeSection && (

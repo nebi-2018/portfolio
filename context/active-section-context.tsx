@@ -1,10 +1,10 @@
 "use client";
 
+import { SectionName } from "@/lib/types";
 import React, { createContext, useContext, useState } from "react";
-import { links } from "@/lib/data";
 
-type SectionName = (typeof links)[number]["name"];
 type ActiveSectionProviderProps = { children: React.ReactNode };
+
 type ActiveSectionContextType = {
   activeSection: SectionName;
   setActiveSection: React.Dispatch<React.SetStateAction<SectionName>>;
