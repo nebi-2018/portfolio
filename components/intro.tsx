@@ -29,7 +29,7 @@ const Intro = () => {
             }}
           >
             <Image
-              src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=600"
+              src="/profile.png"
               alt="profile image"
               width={192}
               height={192}
