@@ -2,9 +2,9 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import rest from "@/public/rest.png";
+import scanshop from "@/public/scanshop.jpg";
+import spaceflight from "@/public/spaceflight.jpg";
 
 export const links = [
   {
@@ -44,41 +44,58 @@ export const experiencesData = [
   {
     title: "Software Developer Intern",
     location: "Helsinki, FI",
-    description: "I worked as a software developer intern for 3 months.",
+    description: "I worked as a software developer intern for 4 months.",
     icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+    date: "2022",
   },
   {
     title: "IT Support Intern",
     location: "Helsinki, FI",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+      "I have worked as an IT Support Engineer intern for 4 months at Helsinki Metropolia University of Applied Sciences. I was installing softwares, troubleshooting and fixing diffrent desktops and laptops problems.",
     icon: React.createElement(FaReact),
-    date: "2021 - present",
+    date: "2022",
   },
 ] as const;
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "Software developer intern",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+      "I worked as a back-end developer on this touchless startup project for 4 months.",
+    tags: ["Nodejs", "Expressjs", "MongoDB", "JWT"],
+    imageUrl: rest,
   },
   {
-    title: "rmtDev",
+    title: "Scan&Pay",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
+      "Shopping android app by scanning the items from the shelf. I have developed both the font-end and back-end. It has features like scanning the barcode, online payment, order history and collecting receipts.",
+    tags: [
+      "Flutter",
+      "TypeScript",
+      "Nodejs",
+      "MongoDB",
+      "Kubernetes",
+      "Docker",
+      "Digital Ocean Cloud",
+    ],
+    imageUrl: scanshop,
   },
   {
-    title: "Word Analytics",
+    title: "Spaceflight news",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+      "An android mobile app for reading a spaceflight news. I have developed the front-end using the public Api.",
+    tags: [
+      "Kotlin",
+      "Android",
+      "Flow",
+      "Coroutines",
+      "MVVM",
+      "retrofit2",
+      "dagger-hilt",
+      "room-database",
+    ],
+    imageUrl: spaceflight,
   },
 ] as const;
 
@@ -104,6 +121,6 @@ export const skillsData = [
   "Express",
   "PostgreSQL",
   "Python",
-  "Django",
+  "React Native",
   "Framer Motion",
 ] as const;
